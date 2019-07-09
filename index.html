@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Hello, world!</title>
+</head>
+
+<body id="body">
+    <div class="contenedor row">
+
+
+        <div class="izquierda col-md-3 bg-light-blue p-3 justify-content-center align-items-center">
+            <a href="#" class="brand-name text-white ml-3 h1">iStocky</a>
+
+            <div class="options mt-5 row">
+                <ul>
+
+                    <li><a id="cargar-producto" href="#">Cargar un producto</a> </li>
+                    <div id="formulario-producto" class="card oculto">
+                        <div class="card-header">
+                            Agregar Producto
+                        </div>
+                        <form id="formulario" class="card-body">
+                            <div class="form-group">
+                                <input required type="text" name="" id="nombre-producto"
+                                    placeholder="Nombre del Producto" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input required type="text" name="" id="descripcion-producto"
+                                    placeholder="Descripcion del Producto" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input required type="number" step="0.01" name="" id="precio-producto"
+                                    placeholder="Precio" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input required type="number" name="" id="stock-producto"
+                                    placeholder="Unidades en stock" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <input required type="url" name="" id="imagen-producto"
+                                    placeholder="Pegar URL de imagen" class="form-control">
+                            </div>
+
+                            <!-- 
+                            <div class="form-group">
+                                <input type="file" id="imagen-producto" name="" accept="image/png, image/jpeg">
+                            </div>
+
+                             -->
+
+                            <input type="submit" value="Agregar" class="btn btn-primary btn-block">
+                        </form>
+                    </div>
+                    <li><a id="modificar-producto" href="#">Modificar un producto</a> </li>
+                    <li><a id='eliminar-producto' href="#">Eliminar un producto</a> </li>
+                    <li><a id='informar-gasto' href="#">Informar gasto</a> </li>
+                    <form id="form-gasto" class="card-body oculto">
+                        <div class="form-group">
+                            <input required type="number" step="0.01" name="" id="precio-gasto"
+                                placeholder="Monto" class="form-control">
+                        </div>
+                        <input type="submit" value="Informar" class="btn btn-primary btn-block">
+                    </form>
+                    
+                    <li class="caja col-12 ">Caja: <span id="caja">$0</span> </li>
+
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="derecha col-md-9 p-0 h-100">
+
+            <!-- Navbar -->
+            <nav class="navbar navbar-light bg-light-blue">
+                <span class="navbar-brand"></span>
+                <button class="btn btn-white letra-color-marca m-3 px-5">Ingresar</button>
+            </nav>
+
+            <!-- Productos -->
+            <div id="productos" class="row justify-content-center align-items-center">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+        
+    <script src="JS/visual.js"></script>
+    <script src="JS/main.js"></script>
+    <script src="JS/compra.js"></script>
+</body>
+
+</html>
